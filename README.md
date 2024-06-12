@@ -62,6 +62,7 @@ git clone https://github.com/EchoseChen/SPA-VL-RLHF.git
 Before RLHF training, you should download LLaVA-v1.5-7b checkpoint from [Hugging Face](https://huggingface.co/liuhaotian/llava-v1.5-7b); LLaVA-v1.5-13b checkpoint from(https://huggingface.co/liuhaotian/llava-v1.5-13b).
 
 3. Prepare training dataset
+
 You should download our dataset on [SPA-VL](https://huggingface.co/datasets/sqrti/SPA-VL). 
 
 The dataset in training stage should be transformed in JSON format, with each entry containing the following fields:
@@ -95,7 +96,8 @@ Additionally, prepare a JSON file that includes the paths to all the JSON files 
 
 ```
 
-2. SPA-VL PPO Training
+4. SPA-VL PPO Training
+
 The first stage is Reward Model training, you can run the following script to get the reward model. Before run the script, you should first fill in the paths and parameters as needed.
 
 ```bash
@@ -108,14 +110,16 @@ The second stage is PPO training, you can run the following script to do PPO tra
 ```bash
 bash ./scripts/train_ppo_model_ds.sh
 ```
-2. SPA-VL DPO Training
+5. SPA-VL DPO Training
+
 DPO training only consists of one stage training. Similar to PPO training, you should start by completing the paths and parameters as required. And then run the following script.
 
 ```bash
 bash ./scripts/train_dpo_model_ds.sh
 ```
 
-3. SPA-VL Lora Training
+6. SPA-VL Lora Training
+
 We also offer Lora version training for both DPO and PPO methods. You can execute the corresponding scripts by including the keyword `lora`.
 
 ## Infer
