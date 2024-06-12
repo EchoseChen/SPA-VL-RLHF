@@ -1,0 +1,5 @@
+{
+    "hardq": "path/to/your/directory/hardq_train.json",
+    "hardd": "path/to/your/directory/hardd_train.json",
+    "easy": "path/to/your/directory/easy_train.json"
+}
