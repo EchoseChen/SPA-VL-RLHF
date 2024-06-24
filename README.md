@@ -139,3 +139,14 @@ bash ./scripts/infer.sh
 ## Citation
 
 If you find our model/code/data/paper helpful, please consider cite our paper and star us！
+
+```bibtex
+@misc{zhang2024spavl,
+    title={SPA-VL: A Comprehensive Safety Preference Alignment Dataset for Vision Language Model},
+    author={Yongting Zhang and Lu Chen and Guodong Zheng and Yifeng Gao and Rui Zheng and Jinlan Fu and Zhenfei Yin and Senjie Jin and Yu Qiao and Xuanjing Huang and Feng Zhao and Tao Gui and Jing Shao},
+    year={2024},
+    eprint={2406.12030},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+```
